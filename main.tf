@@ -56,7 +56,7 @@ resource "azurerm_network_security_group" "app_nsg" {
   resource_group_name = azurerm_resource_group.app_rg1.name
 
   security_rule {
-    name                       = "test123"
+    name                       = "App-Rule"
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"
